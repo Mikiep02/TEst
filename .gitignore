@@ -1,0 +1,7 @@
+# Mask  private key(s)
+id_rsa*
+
+#Mask scripts
+01*
+02*
+03*
