@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e
 
-git clone git@bitbucket.org:jasperroel/jotihunt-website.git /var/www/jotihunt-site
+DIRECTORY=/var/www/jotihunt-site
+
+if [ ! -d "$DIRECTORY" ]; then
+  git clone git@bitbucket.org:jasperroel/jotihunt-website.git $DIRECTORY
+fi
 
 exec "$@"
