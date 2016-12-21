@@ -1,7 +1,9 @@
-# Mask  private key(s)
-id_rsa*
+# Environment docker file (contains passwords, settings, etc)
+env
+docker.properties
 
-#Mask scripts
+# Block custom scripts
 01*
 02*
 03*
+04*
